@@ -1,3 +1,26 @@
+# A fork of Verl for RL PPO and GRPO With Qwen
+---
+## Overview 
+This repo uses a subsample of the GSM-8k dataset with 2k rows of training data [url](https://huggingface.co/datasets/IanLi233/gsm8k-sample-2k)
+
+## Setup
+1. `git clone https://github.com/Gear-dev-sudo/verl-fork-RL`
+2. setup the Venv
+  ```python
+  conda create -n verl python==3.10
+  conda activate verl
+
+  pip3 install torch torchvision
+pip3 install flash-attn --no-build-isolation
+  ```
+3. setup repo
+```bash
+git clone https://github.com/Gear-dev-sudo/verl-fork-RL
+cd verl-fork-RL
+pip3 install -e .[vllm]
+
+```
+
 <div align="center">
  👋 Hi, everyone! 
     <br>
