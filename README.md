@@ -7,19 +7,24 @@ This repo uses a subsample of the GSM-8k dataset with 2k rows of training data [
 1. `git clone https://github.com/Gear-dev-sudo/verl-fork-RL`
 2. setup the Venv
   ```python
-  conda create -n verl python==3.10
+  conda create -n verl python=3.10
   conda activate verl
 
   pip3 install torch torchvision
-pip3 install flash-attn --no-build-isolation
+pip3 install flash-attn --no-build-isolation  # this might take a lot of time
   ```
 3. setup repo
 ```bash
-git clone https://github.com/Gear-dev-sudo/verl-fork-RL
-cd verl-fork-RL
+git clone https://github.com/Gear-dev-sudo/verl
+cd verl
 pip3 install -e .[vllm]
 
 ```
+
+## Launch PPO and GRPO for Qwen 2.5-0.5b-instruct on the subsample dataset
+GRPO: `examples/grpo_trainer/run_qwen2-0.5b_math.sh`
+
+PPO: `examples/ppo_trainer/run_qwen2-0.5b_math.sh`
 
 <div align="center">
  👋 Hi, everyone! 
